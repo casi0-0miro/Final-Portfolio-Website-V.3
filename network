@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Networking Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #38bdf8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 60px 10%;
+      border-bottom: 1px solid #334155;
+    }
+
+    h1, h2 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 15px;
+      margin: 25px 0;
+      border: 3px solid #38bdf8;
+    }
+
+    .card {
+      background-color: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      margin: 20px 0;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .image-placeholder {
+      background-color: #334155;
+      height: 220px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #cbd5e1;
+      margin: 20px 0;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #020617;
+      color: #94a3b8;
+    }
+
+    .highlight {
+      color: #facc15;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 50px 7%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#fundamentals">Networking Fundamentals</a>
+    <a href="#ipmac">IP & MAC Addresses</a>
+    <a href="#labs">Tools & Labs</a>
+    <a href="#careers">Careers & Certifications</a>
+    <a href="#reflection">Reflection</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>My Networking Portfolio</h1>
+
+  <p>
+    Welcome to my Networking Portfolio. This website showcases my learning in computer networking,
+    including network devices, IP addressing, protocols, Wireshark labs, Cisco Packet Tracer activities,
+    troubleshooting commands, and career research. My goal is to demonstrate the skills I am building
+    for future technology careers.
+  </p>
+
+  <!-- HOME PAGE BANNER IMAGE: Replace the src link below with your own networking image if desired -->
+  <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Networking Banner">
+
+  <div class="card">
+    <h2>What You Will Find on This Website</h2>
+    <ul>
+      <li>Networking fundamentals and vocabulary</li>
+      <li>IP addressing and MAC address explanations</li>
+      <li>Hands-on networking labs and troubleshooting</li>
+      <li>Networking tools like Wireshark and Cisco Packet Tracer</li>
+      <li>Career pathways and certifications in networking and cybersecurity</li>
+    </ul>
+  </div>
+</section>
+
+<section id="fundamentals">
+  <h2>Networking Fundamentals</h2>
+
+  <div class="card">
+    <p>
+      A <span class="highlight">computer network</span> is a group of connected devices that communicate
+      and share information with each other. Networks allow devices to share files, printers, internet access,
+      and other resources.
+    </p>
+
+    <h3>Types of Networks</h3>
+    <ul>
+      <li><strong>LAN (Local Area Network):</strong> A network covering a small area like a classroom, house, or office.</li>
+      <li><strong>WAN (Wide Area Network):</strong> A network that spans large geographic areas. The internet is the biggest WAN.</li>
+      <li><strong>WLAN (Wireless Local Area Network):</strong> A wireless version of a LAN using Wi-Fi.</li>
+    </ul>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Network Devices</h3>
+      <ul>
+        <li><strong>Router:</strong> Connects networks together and directs traffic.</li>
+        <li><strong>Switch:</strong> Connects devices inside the same network.</li>
+        <li><strong>Access Point:</strong> Provides wireless access to devices.</li>
+        <li><strong>Client:</strong> A device requesting services from another device.</li>
+        <li><strong>Server:</strong> A computer that provides services or resources.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Networking Vocabulary</h3>
+      <ul>
+        <li><strong>Bandwidth:</strong> The amount of data transferred over a network.</li>
+        <li><strong>Protocol:</strong> Rules that devices use to communicate.</li>
+        <li><strong>Packet:</strong> A small unit of data sent across a network.</li>
+        <li><strong>IP Address:</strong> A logical address assigned to a device.</li>
+        <li><strong>MAC Address:</strong> A physical hardware address assigned to a network card.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ADD IMAGE HERE: LAN/WAN NETWORK DIAGRAM -->
+  <!-- Example: <img src="images/network-diagram.png" alt="LAN and WAN Diagram" width="100%"> -->
+  <div class="image-placeholder">
+    Insert a LAN/WAN network diagram screenshot here.<br>
+    Because every networking assignment legally requires at least one diagram with arrows.
+  </div>
+</section>
+
+<section id="ipmac">
+  <h2>IP Addressing and MAC Addresses</h2>
+
+  <div class="card">
+    <h3>What is an IP Address?</h3>
+    <p>
+      An IP address is a unique address assigned to a device on a network. It helps devices locate and communicate with each other.
+    </p>
+
+    <ul>
+      <li><strong>IPv4:</strong> Uses 32 bits and appears as four numbers separated by periods. Example: 192.168.1.1</li>
+      <li><strong>IPv6:</strong> Uses 128 bits and was created to provide more addresses for modern devices.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Private and Public IP Addresses</h3>
+
+    <ul>
+      <li><strong>Private IP Example:</strong> 192.168.0.15</li>
+      <li><strong>Public IP Example:</strong> 8.8.8.8</li>
+      <li><strong>Subnet Mask:</strong> Helps identify the network and host portions of an IP address.</li>
+      <li><strong>Default Gateway:</strong> The router used to access outside networks.</li>
+      <li><strong>DNS Server:</strong> Translates website names into IP addresses.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>What is a MAC Address?</h3>
+
+    <p>
+      A MAC address is a hardware address permanently assigned to a network interface card.
+      The first three octets identify the manufacturer. This section is called the
+      <strong>OUI (Organizationally Unique Identifier)</strong>.
+    </p>
+
+    <p>
+      Example MAC Address:<br>
+      00:1A:2B:4C:5D:6E
+    </p>
+
+    <p>
+      In this example, <strong>00:1A:2B</strong> identifies the manufacturer.
+    </p>
+  </div>
+
+  <!-- ADD IMAGE HERE: IPCONFIG OR NETWORK SETTINGS SCREENSHOT -->
+  <!-- Example: <img src="images/ipconfig.png" alt="ipconfig screenshot" width="100%"> -->
+  <div class="image-placeholder">
+    Insert a screenshot of ipconfig /all or network settings here.
+  </div>
+</section>
+
+<section id="labs">
+  <h2>Networking Tools and Labs</h2>
+
+  <div class="card">
+    <h3>Lab 1: Using ipconfig</h3>
+
+    <p>
+      In this lab, I used the ipconfig command in Command Prompt to view my computer's network information.
+      I identified the IPv4 address, subnet mask, and default gateway.
+    </p>
+
+    <p>
+      I learned how devices receive network information and how troubleshooting often starts by checking IP configuration.
+    </p>
+
+    <!-- ADD IMAGE HERE: IPCONFIG LAB SCREENSHOT -->
+    <!-- Example: <img src="images/ipconfig-lab.png" alt="ipconfig lab" width="100%"> -->
+    <div class="image-placeholder">
+      Insert ipconfig screenshot here.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Lab 2: Using Ping</h3>
+
+    <p>
+      In this lab, I used the ping command to test whether my computer could communicate with another device.
+      I learned that ping uses ICMP packets and helps troubleshoot network connectivity problems.
+    </p>
+
+    <p>
+      This lab showed how technicians verify whether a device or website is reachable over a network.
+    </p>
+
+    <!-- ADD IMAGE HERE: PING COMMAND SCREENSHOT -->
+    <!-- Example: <img src="images/ping-test.png" alt="ping command screenshot" width="100%"> -->
+    <div class="image-placeholder">
+      Insert ping command screenshot here.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Lab 3: Wireshark Packet Capture</h3>
+
+    <p>
+      I used Wireshark to capture packets traveling across the network.
+      I identified protocols such as TCP, UDP, and ARP.
+    </p>
+
+    <p>
+      This lab helped me understand how devices communicate behind the scenes and how analysts troubleshoot traffic issues.
+    </p>
+
+    <!-- ADD IMAGE HERE: WIRESHARK SCREENSHOT -->
+    <!-- Example: <img src="images/wireshark-capture.png" alt="Wireshark packet capture" width="100%"> -->
+    <div class="image-placeholder">
+      Insert Wireshark screenshot here.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Lab 4: Cisco Packet Tracer</h3>
+
+    <p>
+      In Cisco Packet Tracer, I created a simple LAN using switches, routers, and PCs.
+      I configured IP addresses and tested connectivity between devices.
+    </p>
+
+    <p>
+      This activity helped me understand how real networks are built and configured.
+    </p>
+
+    <!-- ADD IMAGE HERE: CISCO PACKET TRACER TOPOLOGY -->
+    <!-- Example: <img src="images/packet-tracer-topology.png" alt="Packet Tracer topology" width="100%"> -->
+    <div class="image-placeholder">
+      Insert Packet Tracer topology screenshot here.
+    </div>
+  </div>
+</section>
+
+<section id="careers">
+  <h2>Networking Careers and Certifications</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Network Administrator</h3>
+      <p>
+        Network Administrators manage and maintain computer networks inside businesses and organizations.
+        They configure routers, switches, and security settings.
+      </p>
+
+      <p><strong>Skills Needed:</strong></p>
+      <ul>
+        <li>Troubleshooting</li>
+        <li>IP addressing</li>
+        <li>Network security</li>
+        <li>Communication skills</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Cybersecurity Analyst</h3>
+      <p>
+        Cybersecurity Analysts protect networks and systems from hackers, malware, and attacks.
+        They monitor network traffic and investigate suspicious activity.
+      </p>
+
+      <p><strong>Skills Needed:</strong></p>
+      <ul>
+        <li>Security analysis</li>
+        <li>Packet analysis</li>
+        <li>Problem-solving</li>
+        <li>Knowledge of threats and vulnerabilities</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Cloud Network Engineer</h3>
+      <p>
+        Cloud Network Engineers design and manage cloud-based infrastructure and networking systems.
+      </p>
+
+      <p><strong>Skills Needed:</strong></p>
+      <ul>
+        <li>Cloud computing</li>
+        <li>Network configuration</li>
+        <li>Automation</li>
+        <li>Security management</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Networking Certifications</h3>
+
+    <ul>
+      <li><strong>CompTIA Network+</strong> - Covers networking fundamentals and troubleshooting.</li>
+      <li><strong>Cisco CCNA</strong> - Focuses on routing, switching, and enterprise networking.</li>
+      <li><strong>CompTIA A+</strong> - Covers computer hardware and IT support basics.</li>
+      <li><strong>Google IT Support Certificate</strong> - Entry-level IT and support certification.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Personal Career Reflection</h3>
+
+    <p>
+      The career that interests me most is Cybersecurity Analyst because I enjoy problem-solving,
+      investigating how systems work, and protecting networks from threats. Networking and cybersecurity
+      are important because modern businesses depend on secure communication systems every day.
+    </p>
+  </div>
+</section>
+
+<section id="reflection">
+  <h2>Project Reflection</h2>
+
+  <div class="card">
+    <p>
+      Creating this networking portfolio helped me better understand how computer networks function and how devices communicate.
+      While building this website, I learned more about IP addresses, MAC addresses, troubleshooting commands, and networking tools
+      like Wireshark and Cisco Packet Tracer. I also improved my ability to explain technical concepts clearly and organize information professionally.
+    </p>
+
+    <p>
+      The page I am most proud of is the Networking Tools and Labs page because it shows hands-on work and technical growth.
+      Including lab explanations and troubleshooting examples helped demonstrate that I can apply networking concepts in real situations,
+      not just memorize definitions. This project also helped me understand how networking connects to real careers in cybersecurity and IT.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Sources</h3>
+
+    <ul>
+      <li>Cisco Networking Academy</li>
+      <li>CompTIA Network+ Study Materials</li>
+      <li>Wireshark Documentation</li>
+      <li>Cisco Packet Tracer</li>
+      <li>Microsoft Networking Documentation</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Networking Portfolio | Created for AP Networking with Mr. Hood</p>
+</footer>
+
+</body>
+</html>
